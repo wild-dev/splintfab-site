@@ -79,24 +79,30 @@
   <p>The app uses your iPhone's front TrueDepth camera and depth sensor solely to capture 3D scans. Camera images and depth data are processed entirely on your device in real time. No camera image, depth frame, or video stream is ever uploaded, shared with us, or accessible to any third party.</p>
   <p>Camera permission is required for the app to function. If permission is denied the scanning feature will not be available.</p>
 
-  <h2>3. Scan Data Storage</h2>
+  <h2>3. Face Data (TrueDepth Camera)</h2>
+  <p>The app uses Apple's TrueDepth camera API as a 3D measurement sensor. During a scan it captures depth maps (per-pixel distance measurements) and colour camera images of whatever is in front of the camera &mdash; normally a patient's foot, ankle, or hand. If the camera is pointed at a face, the same depth maps and images may incidentally include face data. This data is collected for one purpose only: to reconstruct a three-dimensional model (a coloured point cloud) of the scanned body part for orthotic and prosthetic fabrication. There are no other uses, planned or otherwise.</p>
+  <p>The app performs no facial recognition, no face identification, no face tracking, and no facial analysis of any kind. It does not create faceprints or biometric templates, does not use ARKit face tracking, and cannot identify any person from a scan. Depth and image data are never used for authentication or advertising.</p>
+  <p><strong>Storage and retention:</strong> live depth frames and camera images are processed in memory on the device in real time and immediately discarded &mdash; they are never written to disk. Only the resulting 3D point cloud is stored, and only when you explicitly tap Save; it remains in the app's private sandbox on your device until you delete it. We never receive or retain any of this data, because the app transmits nothing.</p>
+  <p><strong>Disclosure and sharing:</strong> face data &mdash; and all other camera, depth, and scan data &mdash; is never shared with us or with any third party, and is never uploaded to any server. It leaves your device only if you explicitly export a saved scan using the Share function. The app contains no third-party SDKs that can access camera or depth data.</p>
+
+  <h2>4. Scan Data Storage</h2>
   <p>All 3D scans captured with the app are stored locally in the app's private sandbox on your device. Scans are never uploaded to any server, cloud service, or third-party system.</p>
   <p>Scans are shared only when you explicitly choose to share them using the app's Share function (for example, via AirDrop or email). At that point the file is transferred by your choice; we have no involvement in or access to that transfer.</p>
   <p>Deleting a scan in the app permanently removes the file from your device. We do not retain copies of deleted scans.</p>
 
-  <h2>4. Analytics and Tracking</h2>
+  <h2>5. Analytics and Tracking</h2>
   <p>The app contains no analytics, telemetry, crash-reporting services, or advertising SDKs. No usage data of any kind is collected or transmitted.</p>
 
-  <h2>5. Patient Data</h2>
+  <h2>6. Patient Data</h2>
   <p>When you scan a patient's foot or other body part, that scan constitutes sensitive health-related data. Under our architecture this data never leaves the device without your explicit action. Responsibility for appropriate handling, retention, and sharing of patient data in accordance with applicable healthcare privacy regulations (such as HIPAA in the United States) rests with the clinician and their organisation.</p>
 
-  <h2>6. Children's Privacy</h2>
+  <h2>7. Children's Privacy</h2>
   <p>This app is intended for professional clinical use by adults. It is not directed at children under 13 and we do not knowingly collect any information from children.</p>
 
-  <h2>7. Changes to This Policy</h2>
+  <h2>8. Changes to This Policy</h2>
   <p>If we update this privacy policy we will revise the "Last updated" date above. The current version is always available at this URL and within the app under About &rarr; Privacy Policy.</p>
 
-  <h2>8. Contact</h2>
+  <h2>9. Contact</h2>
   <p>For privacy questions or concerns please contact:</p>
   <p>SplintFab<br><a href="mailto:sam@splintfab.com">sam@splintfab.com</a></p>
 </main>
