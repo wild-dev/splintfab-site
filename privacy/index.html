@@ -3,115 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — SplintFab Scanner</title>
+  <meta http-equiv="refresh" content="0; url=https://wild-dev.github.io/splintfab-app/privacy/">
+  <link rel="canonical" href="https://wild-dev.github.io/splintfab-app/privacy/">
+  <title>SplintFab Scanner — Privacy Policy</title>
+  <script>location.replace("https://wild-dev.github.io/splintfab-app/privacy/");</script>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.65;
-      color: #1a1a1a;
-      background: #f8f8f8;
-    }
-    header {
-      background: #1F4E79;
-      color: #fff;
-      padding: 32px 24px 28px;
-    }
-    header h1 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-    }
-    header p {
-      font-size: 0.9rem;
-      opacity: 0.75;
-      margin-top: 4px;
-    }
-    main {
-      max-width: 720px;
-      margin: 40px auto;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 1px 4px rgba(0,0,0,.08);
-      padding: 40px 48px;
-    }
-    .meta {
-      font-size: 0.85rem;
-      color: #666;
-      margin-bottom: 32px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #e8e8e8;
-    }
-    h2 {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #1F4E79;
-      margin: 28px 0 8px;
-    }
-    p { margin-bottom: 12px; color: #333; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: #1a1a1a; background: #f6f8fa; text-align: center; padding: 80px 24px; }
     a { color: #1F4E79; }
-    footer {
-      text-align: center;
-      font-size: 0.8rem;
-      color: #999;
-      padding: 24px;
-    }
-    @media (max-width: 640px) {
-      main { margin: 16px; padding: 24px 20px; }
-    }
   </style>
 </head>
 <body>
-<div style="background:#163a5c;color:#fff;font-size:0.85rem;">
-  <div style="max-width:720px;margin:0 auto;padding:10px 24px;display:flex;justify-content:space-between;align-items:center;">
-    <a href="../" style="color:#fff;text-decoration:none;font-weight:700;">Boom Consulting LLC</a>
-    <span style="opacity:0.85;"><a href="../splintfab/" style="color:#fff;text-decoration:none;">SplintFab Scanner</a> &middot; <a href="../support/" style="color:#fff;text-decoration:none;">Support</a></span>
-  </div>
-</div>
-<header>
-  <h1>SplintFab Scanner</h1>
-  <p>Privacy Policy</p>
-</header>
-<main>
-  <p class="meta">Last updated: June 2026</p>
-
-  <p>Boom Consulting LLC ("we", "our", or "us") built the SplintFab Scanner app for professional orthotics and prosthetics clinicians. This policy explains what information the app handles and how.</p>
-
-  <h2>1. Data We Collect</h2>
-  <p>We collect no personal information. The app does not create accounts, does not require a login, and does not transmit any data over the internet.</p>
-
-  <h2>2. Camera and Depth Sensor</h2>
-  <p>The app uses your iPhone's front TrueDepth camera and depth sensor solely to capture 3D scans. Camera images and depth data are processed entirely on your device in real time. No camera image, depth frame, or video stream is ever uploaded, shared with us, or accessible to any third party.</p>
-  <p>Camera permission is required for the app to function. If permission is denied the scanning feature will not be available.</p>
-
-  <h2>3. Face Data (TrueDepth Camera)</h2>
-  <p>The app uses Apple's TrueDepth camera API as a 3D measurement sensor. During a scan it captures depth maps (per-pixel distance measurements) and colour camera images of whatever is in front of the camera &mdash; normally a patient's foot, ankle, or hand. If the camera is pointed at a face, the same depth maps and images may incidentally include face data. This data is collected for one purpose only: to reconstruct a three-dimensional model (a coloured point cloud) of the scanned body part for orthotic and prosthetic fabrication. There are no other uses, planned or otherwise.</p>
-  <p>To keep the 3D scan stable while you move the device around the body part, the app uses Apple's ARKit face-tracking API (ARFaceTrackingConfiguration) purely as a motion sensor: it provides six-degrees-of-freedom camera position and orientation so successive depth frames can be aligned into a single model. We use only this position/orientation (pose) information. The app performs no facial recognition, no face identification, and no facial analysis of any kind; it does not create faceprints or biometric templates; it does not use face data for authentication, advertising, or identifying any person; and it cannot identify any person from a scan. Like all other camera and depth data, any face-tracking data is processed on the device in real time and never uploaded or shared.</p>
-  <p><strong>Storage and retention:</strong> live depth frames and camera images are processed in memory on the device in real time and immediately discarded &mdash; they are never written to disk. Only the resulting 3D point cloud is stored, and only when you explicitly tap Save; it remains in the app's private sandbox on your device until you delete it. We never receive or retain any of this data, because the app transmits nothing.</p>
-  <p><strong>Disclosure and sharing:</strong> face data &mdash; and all other camera, depth, and scan data &mdash; is never shared with us or with any third party, and is never uploaded to any server. It leaves your device only if you explicitly export a saved scan using the Share function. The app contains no third-party SDKs that can access camera or depth data.</p>
-
-  <h2>4. Scan Data Storage</h2>
-  <p>All 3D scans captured with the app are stored locally in the app's private sandbox on your device. Scans are never uploaded to any server, cloud service, or third-party system.</p>
-  <p>Scans are shared only when you explicitly choose to share them using the app's Share function (for example, via AirDrop or email). At that point the file is transferred by your choice; we have no involvement in or access to that transfer.</p>
-  <p>Deleting a scan in the app permanently removes the file from your device. We do not retain copies of deleted scans.</p>
-
-  <h2>5. Analytics and Tracking</h2>
-  <p>The app contains no analytics, telemetry, crash-reporting services, or advertising SDKs. No usage data of any kind is collected or transmitted.</p>
-
-  <h2>6. Patient Data</h2>
-  <p>When you scan a patient's foot or other body part, that scan constitutes sensitive health-related data. Under our architecture this data never leaves the device without your explicit action. Responsibility for appropriate handling, retention, and sharing of patient data in accordance with applicable healthcare privacy regulations (such as HIPAA in the United States) rests with the clinician and their organisation.</p>
-
-  <h2>7. Children's Privacy</h2>
-  <p>This app is intended for professional clinical use by adults. It is not directed at children under 13 and we do not knowingly collect any information from children.</p>
-
-  <h2>8. Changes to This Policy</h2>
-  <p>If we update this privacy policy we will revise the "Last updated" date above. The current version is always available at this URL and within the app under About &rarr; Privacy Policy.</p>
-
-  <h2>9. Contact</h2>
-  <p>For privacy questions or concerns please contact:</p>
-  <p>Boom Consulting LLC<br>SplintFab Scanner<br><a href="mailto:sam@splintfab.com">sam@splintfab.com</a></p>
-</main>
-<footer>&copy; 2026 Boom Consulting LLC. All rights reserved. &nbsp;&middot;&nbsp; <a href="../">Home</a> &nbsp;&middot;&nbsp; <a href="../support/">Support</a></footer>
+  <p>The SplintFab Scanner privacy policy has moved.</p>
+  <p><a href="https://wild-dev.github.io/splintfab-app/privacy/">Continue to the privacy policy &rarr;</a></p>
 </body>
 </html>
